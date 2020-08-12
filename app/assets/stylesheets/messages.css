@@ -38,6 +38,7 @@
 .rooms{
   color: white;
   padding: 20px 0 40px 0;
+  text-decoration: none;
 }
 .main_wrapper{
   background-color: pink;
