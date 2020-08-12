@@ -6,7 +6,7 @@
   <div class="side_main">
   <% current_user.rooms.each do |room|%>
     <div class="rooms">
-      <%= link_to room.name, root_path, class:"rooms"%>
+      <%= link_to room.name, room_messages_path(room), class:"rooms"%>
     </div>
     <%end%>
   </div>
