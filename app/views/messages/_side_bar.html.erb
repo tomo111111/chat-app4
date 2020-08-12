@@ -1,14 +1,13 @@
 <div class="side_wrapper">
   <div class="side_top">
   <%= link_to current_user.name,edit_user_path(current_user.id),class:"user_name" %>
-  <%=link_to "チャットを作成する", root_path,class:"create_chat" %>
+  <%=link_to "チャットを作成する", new_room_path,class:"create_chat" %>
   </div>
   <div class="side_main">
+  <% current_user.rooms.each do |room|%>
     <div class="rooms">
-      room1
+      <%= link_to room.name, root_path %>
     </div>
-    <div class="rooms">
-      room1
-    </div>
+    <%end%>
   </div>
 </div>
