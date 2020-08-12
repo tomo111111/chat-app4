@@ -6,39 +6,7 @@
     </div>
   </div>
   <div class="main_middle">
-
-    <div class="messages">
-      <div class="message">
-        <div class="message_top">
-          <div class="message_name">
-            Tom
-          </div>
-          <div class="message_date">
-            2020/20/20/20:20/20
-          </div>
-        </div>
-        <div class="message_content">
-          おはよう
-        </div>
-      </div>
-    </div>
-
-    <div class="messages">
-      <div class="message">
-        <div class="message_top">
-          <div class="message_name">
-            Tom
-          </div>
-          <div class="message_date">
-            2020/20/20/20:20/20
-          </div>
-        </div>
-        <div class="message_content">
-          おはよう
-        </div>
-      </div>
-    </div>
-
+    <%= render partial:"message",collection:@messages %>
   </div>
   <div class="main_bottom">
     <%= form_with model: [@room,@message], html: {class:"form"},local:true do |f| %>
