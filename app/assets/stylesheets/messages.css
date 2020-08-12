@@ -1,0 +1,45 @@
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.side_wrapper{
+  background-color: #253141;
+  height: 100%;
+  width: 300px;
+}
+.side_top{
+  background-color: gold;
+  height: 100px;
+  width: 100%;
+  padding: 0 20px;
+}
+.side_main{
+  background-color: green;
+  height: calc(100% - 100px);
+  width: 100%;
+  padding: 0 20px;
+}
+.main_wrapper{
+  background-color: pink;
+  height: 100%;
+  width: calc(100vw - 300px);
+}
+.main_top{
+  background-color:white ;
+  height: 100px;
+  width: 100%;
+  padding: 0 40px;
+}
+.main_middle{
+  background-color:gray ;
+  height: calc(100% - 190px);
+  width: 100%;
+  padding: 46px 40px 0 40px;
+}
+.main_bottom{
+  background-color:wheat; 
+  height: 90px;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+}
