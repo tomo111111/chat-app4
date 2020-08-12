@@ -1,6 +1,6 @@
 <div class="side_wrapper">
   <div class="side_top">
-  <p class="user_name">MMMMMMM</p>
+  <%= link_to current_user.name,edit_user_path(current_user.id),class:"user_name" %>
   <%=link_to "チャットを作成する", root_path,class:"create_chat" %>
   </div>
   <div class="side_main">
